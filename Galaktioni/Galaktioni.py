@@ -153,7 +153,7 @@ m = model.to(device)
 
 
 # Load the model and optimizer state from the saved checkpoint
-checkpoint = torch.load('model_checkpoint_7100.pth', map_location=torch.device('cpu'))
+checkpoint = torch.load('model_checkpoint.pth', map_location=torch.device('cpu'))
 m.load_state_dict(checkpoint['model_state_dict'])
 m.to(device)
 m.eval()
